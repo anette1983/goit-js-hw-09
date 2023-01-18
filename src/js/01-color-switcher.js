@@ -11,6 +11,7 @@ stopButton.addEventListener('click', onStopBtnClick);
 function onStartBtnClick() {    
 SwitcherTimerId = setInterval(changeColor, 1000);
 startButton.setAttribute('disabled', 'true');   
+stopButton.removeAttribute('disabled');
     
 }
 
@@ -22,6 +23,7 @@ function changeColor() {
 function onStopBtnClick() {
     startButton.removeAttribute('disabled');
     clearInterval(SwitcherTimerId);
+    stopButton.setAttribute('disabled', 'true');
 }
 
 

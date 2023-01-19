@@ -5,8 +5,11 @@ let SwitcherTimerId = null;
 
 
 
+
 startButton.addEventListener('click', onStartBtnClick);
 stopButton.addEventListener('click', onStopBtnClick);
+
+stopButton.setAttribute('disabled', 'true');
 
 function onStartBtnClick() {    
 SwitcherTimerId = setInterval(changeColor, 1000);

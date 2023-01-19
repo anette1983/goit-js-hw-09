@@ -16,3 +16,78 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* стилі таймеру */
+
+input {
+  font: inherit;
+  font-size: 24px;
+  width: 300px;
+  margin-bottom: 40px; 
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left:10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  box-shadow: none;
+
+}
+
+.timer {
+  color: #212121;
+  border-radius: 2px;
+}
+
+.timer {
+  display: flex;
+
+}
+.field > span {
+  display: flex;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+
+.field .label {
+  display: flex;
+  justify-content: center;
+
+}
+
+.field {
+  margin-right: 20px;
+}
+
+.value {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 60px;
+  text-shadow: 2px 2px 4px #00000060;
+}
+
+input + button {
+  display: inline-flex;
+  margin-left: 4px;
+  margin-right: 4px;
+  text-transform: uppercase;
+  border: 0;
+  background-color: #2196f3;
+  color: #ffffff;
+  padding: 7px 15px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input + button:hover,
+input + button:focus {
+ background-color: #188CE8;
+}
+
+input + button:disabled {
+  background-color: #188ae888;
+}
+

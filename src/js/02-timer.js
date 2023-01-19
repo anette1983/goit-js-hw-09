@@ -1,8 +1,8 @@
-import { convertMs, addLeadingZero } from "../js/functions";
+import { convertMs, addLeadingZero } from "/src/js/functions";
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import "../css/common.css";
+import "/src/css/common.css";
 
 
 

@@ -48,24 +48,3 @@ function createPromise(position, delay) {
   });  
 } 
 
-
-
-// intervalId = setInterval(() => {
-//   createPromise(promiseCounter, delay)
-//     .then(({ position, delay }) => {
-//       Notify.success(
-//         `✅ Fulfilled promise ${position} in ${delay}ms`
-//       );
-//     })
-//     .catch(({ position, delay }) => {
-//       Notify.failure(
-//         `❌ Rejected promise ${position} in ${delay}ms`
-//       );
-//     });
-
-//   if (promiseCounter = amount) {
-//     clearTimeout(intervalId);
-//   }
-//   promiseCounter += 1;
-//   delay += step;
-// }, step);

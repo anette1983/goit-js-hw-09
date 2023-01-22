@@ -3,7 +3,7 @@
 const startButton = document.querySelector("[data-start]");
 const stopButton = document.querySelector("[data-stop]");
 const bodyEl = document.body;
-let SwitcherTimerId = null;
+let switcherTimerId = null;
 
 
 
@@ -14,7 +14,7 @@ stopButton.addEventListener('click', onStopBtnClick);
 stopButton.setAttribute('disabled', 'true');
 
 function onStartBtnClick() {    
-SwitcherTimerId = setInterval(changeColor, 1000);
+switcherTimerId = setInterval(changeColor, 1000);
 startButton.setAttribute('disabled', 'true');   
 stopButton.removeAttribute('disabled');
     
@@ -27,7 +27,7 @@ function changeColor() {
 
 function onStopBtnClick() {
     startButton.removeAttribute('disabled');
-    clearInterval(SwitcherTimerId);
+    clearInterval(switcherTimerId);
     stopButton.setAttribute('disabled', 'true');
 }
 
